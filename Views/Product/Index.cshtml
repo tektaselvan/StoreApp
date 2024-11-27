@@ -1,0 +1,15 @@
+@{
+    Layout = "_Layout";
+}
+@model List<Product>
+
+@section Footer{
+    <div>
+        Only for Index Footer
+    </div>
+}    
+
+@foreach (Product product in Model)
+{
+   <partial name="_ProductCard" model="@product" />
+}
